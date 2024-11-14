@@ -21,7 +21,7 @@ const AppContainer =
   padding-bottom: 3rem; // To ensure footer is visible
 `;
 
-const App = () => {
+const App: React.FC = () => {
   const [theme] = useThemeStore();
 
   return (
