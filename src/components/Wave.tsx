@@ -1,9 +1,12 @@
 import * as React from "react";
 
-export default function Wave() {
+function Wave() {
+  console.log(">>> render Wave");
   return (
     <span role="img" aria-label="hand waving">
       👋
     </span>
   );
 }
+export default Wave;
+// export default React.memo(Wave);
