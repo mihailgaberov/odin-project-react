@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import ThemeToggler from "./components/ThemeToggler";
-import { Greeting } from "./components/Greeting";
+import Greeting  from "./components/Greeting";
 import Footer from "./components/Footer";
 import useThemeStore from "./hooks/useThemeStore";
 import styled from "styled-components";

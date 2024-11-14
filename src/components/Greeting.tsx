@@ -1,6 +1,7 @@
 import * as React from "react";
+import Wave from "./Wave";
 
-export const Greeting = ({ name }) => {
+export default function Greeting({ name }) {
   const [index, setIndex] = React.useState(0);
 
   const greetings = ["Hello", "Hola", "Bonjour"];
@@ -16,6 +17,7 @@ export const Greeting = ({ name }) => {
         {greetings[index]}, {name}
       </h1>
       <button onClick={handleClick}>Next Greeting</button>
+      <Wave />
     </main>
   );
-};
+}
