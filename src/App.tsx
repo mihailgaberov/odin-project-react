@@ -1,14 +1,12 @@
 import React from "react";
 import Header from "./components/Header";
 import ThemeToggler from "./components/ThemeToggler";
+import { Greeting } from "./components/Greeting";
 import Footer from "./components/Footer";
 import useThemeStore from "./hooks/useThemeStore";
 import styled from "styled-components";
 
-const AppContainer =
-  styled.div <
-  { themeType: "light" | "dark" } >
-  `
+const AppContainer = styled.div<{ themeType: "light" | "dark" }>`
   min-height: 100vh;
   background-color: ${({ themeType }) =>
     themeType === "light" ? "#ffffff" : "#333333"};
@@ -18,7 +16,6 @@ const AppContainer =
   align-items: center;
   transition: all 0.3s ease;
   position: relative;
-  padding-bottom: 3rem; // To ensure footer is visible
 `;
 
 const App: React.FC = () => {
@@ -28,6 +25,7 @@ const App: React.FC = () => {
     <AppContainer themeType={theme}>
       <Header />
       <ThemeToggler />
+      <Greeting name="Mihail" />
       <Footer />
     </AppContainer>
   );
