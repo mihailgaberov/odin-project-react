@@ -8,5 +8,5 @@ function Wave() {
     </span>
   );
 }
-export default Wave;
-// export default React.memo(Wave);
+
+export default React.memo(Wave);
