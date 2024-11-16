@@ -5,6 +5,8 @@ import Greeting from "./components/Greeting";
 import Footer from "./components/Footer";
 import useThemeStore from "./hooks/useThemeStore";
 import styled from "styled-components";
+import Person from "./components/Person";
+import InfiniteLoop from "./components/InfiniteLoop";
 
 const AppContainer = styled.div<{ $$themetype: "light" | "dark" }>`
   min-height: 100vh;
@@ -27,6 +29,8 @@ const App: React.FC = () => {
       <Header />
       <ThemeToggler />
       <Greeting name="Mihail" />
+      <Person />
+      {/* <InfiniteLoop /> */}
       <Footer />
     </AppContainer>
   );
